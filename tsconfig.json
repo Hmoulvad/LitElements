@@ -1,23 +1,40 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "strict": true,
-        "experimentalDecorators": true,
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "noImplicitAny": false,
-        "outDir": "./dist/",
-        "strictPropertyInitialization": false,
-        "allowSyntheticDefaultImports": true,
-        "removeComments": true,
-        "lib": [
-            "dom",
-            "es7",
-            "esnext.array"
-        ]
-    },
-    "exclude": [
-        "node_modules",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin",
+        "alwaysShowRuleFailuresAsWarnings": true,
+        "configFile": "./tslint.json"
+      },
+      {
+        "name": "typescript-lit-html-plugin"
+      }
     ]
+  }
 }

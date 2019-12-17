@@ -1,7 +1,7 @@
 import { LitElement, html, customElement, property } from "lit-element";
-import { typography } from "../styles/typography"
+import { typography } from "../styles/typography.css";
 
-customElement("app-header");
+@customElement("app-header")
 export class Header extends LitElement {
     @property({ type: String }) author = "Hannibal B. Moulvad";
     @property({ type: Boolean }) openState = false;  
@@ -23,7 +23,7 @@ export class Header extends LitElement {
         `;
     }
 
-    _clickHandler(event) {
+    _clickHandler() {
         this.openState = !this.openState;
     }
 }

@@ -1,9 +1,9 @@
 import { LitElement, html, customElement } from "lit-element";
 import "./shell/header";
 import "./shell/footer";
-import { typography } from "./styles/typography";
+import { typography } from "./styles/typography.css";
 
-@customElement('web-app')   
+@customElement('root-el')   
 export class WebApp extends LitElement {
     static get styles() {
         return [

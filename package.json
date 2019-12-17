@@ -1,20 +1,29 @@
 {
-  "name": "litelements",
+  "name": "lit-element-webpack-ts",
   "version": "1.0.0",
-  "description": "Testing out LitElements",
-  "main": "index.js",
-  "dependencies": {
-    "lit-element": "^2.2.1"
-  },
-  "devDependencies": {
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.3",
-    "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10"
-  },
+  "description": "LitElements testing",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "test": "npm run build && node serve.js",
+    "dev": "webpack-dev-server"
   },
   "author": "HBM",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.17",
+    "awesome-typescript-loader": "^5.2.1",
+    "express": "^4.17.1",
+    "tslib": "^1.10.0",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.7.3",
+    "typescript-tslint-plugin": "^0.5.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  }
 }

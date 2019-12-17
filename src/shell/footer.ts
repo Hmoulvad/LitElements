@@ -1,7 +1,7 @@
 import { LitElement, html, customElement } from "lit-element";
-import { typography } from "../styles/typography"
+import { typography } from "../styles/typography.css";
 
-customElement("app-footer");
+@customElement("app-footer")
 export class Footer extends LitElement {
 
     static get styles() {
