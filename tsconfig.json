@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "strict": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "outDir": "./dist/",
+        "strictPropertyInitialization": false,
+        "allowSyntheticDefaultImports": true,
+        "removeComments": true,
+        "lib": [
+            "dom",
+            "es7",
+            "esnext.array"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+    ]
+}
