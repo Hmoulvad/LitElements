@@ -5,15 +5,16 @@
   "main": "dist/bundle.js",
   "scripts": {
     "start": "node serve.js",
-    "build": "webpack",
-    "test": "npm run build && node serve.js",
-    "dev": "webpack-dev-server"
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --config webpack.config.dev.js"
   },
   "author": "HBM",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^12.12.17",
     "awesome-typescript-loader": "^5.2.1",
+    "copy-webpack-plugin": "^5.1.1",
+    "terser-webpack-plugin": "^2.3.1",
     "tslib": "^1.10.0",
     "typescript": "^3.7.3",
     "webpack": "^4.41.2",
