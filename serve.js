@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(favicon(__dirname + "/public/favicon.ico"));
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + "/public"));
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get("/ping", function(req, res) {
