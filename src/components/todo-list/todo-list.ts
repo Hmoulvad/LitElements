@@ -1,6 +1,9 @@
 import { LitElement, html, customElement } from "lit-element";
+import { repeat } from "lit-html/directives/repeat";
 import { global } from "../../styles/global.css";
 import { todolist } from "./todo-list.css";
+import { mockdata, ITodoItem } from "./todo-list.mockdata";
+import "./todo-item";
 
 @customElement("app-todo-list")
 class TodoList extends LitElement {
@@ -14,8 +17,13 @@ class TodoList extends LitElement {
 
     render() {
         return html`
-            <section>
-                <h1>This is the Todo List</h1>
+            <section class="todo-list">
+                <header>
+                    <h3>The today list of the week</h3>
+                </header>
+                ${repeat(mockdata, (todoitem: ITodoItem) => html`
+                    <app-todo-item .props=${todoitem}></app-todo-item>
+                `)}
             </section>
         `;
     }

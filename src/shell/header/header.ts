@@ -16,7 +16,7 @@ class Header extends LitElement {
 
     render() {
         return html`
-            <header>
+            <header class="header">
                 <section class="header__section">
                     <h2>${this.author}</h2>
                     <button @click=${this._clickHandler}>${this.openState ? `close` : `open`}</button>
