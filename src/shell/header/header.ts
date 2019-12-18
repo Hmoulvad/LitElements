@@ -1,15 +1,17 @@
 import { LitElement, html, customElement, property } from "lit-element";
-import { typography } from "../styles/typography.css";
+import { global } from "../../styles/global.css";
+import { header } from "./header.css";
 
 @customElement("app-header")
-export class Header extends LitElement {
+class Header extends LitElement {
     @property({ type: String }) author = "Hannibal B. Moulvad";
     @property({ type: Boolean }) openState = false;  
 
     static get styles() {
         return [
-            typography,
-        ];
+            global,
+            header
+        ]
     }
 
     render() {
@@ -27,3 +29,5 @@ export class Header extends LitElement {
         this.openState = !this.openState;
     }
 }
+
+export default Header;
