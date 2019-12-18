@@ -4,6 +4,7 @@
   "description": "LitElements testing",
   "main": "dist/bundle.js",
   "scripts": {
+    "start" : "node serve.js",
     "build": "webpack",
     "test": "npm run build && node serve.js",
     "dev": "webpack-dev-server"
