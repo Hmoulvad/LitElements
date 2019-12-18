@@ -1,6 +1,7 @@
 import { LitElement, html, customElement } from "lit-element";
 import "./shell/header/header";
 import "./shell/footer";
+import "./components/todo-list";
 import { global } from "./styles/global.css";
 
 @customElement('root-el')   
@@ -12,7 +13,7 @@ export class WebApp extends LitElement {
         return html`
             <app-header></app-header>
             <main>
-                <p>Nothing to see</p>
+                <app-todo-list></app-todo-list>
             </main>
             <app-footer></app-footer>   
         `;

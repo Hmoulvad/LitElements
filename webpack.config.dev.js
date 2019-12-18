@@ -1,6 +1,5 @@
 const path = require("path");
 const { CheckerPlugin } = require('awesome-typescript-loader');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
@@ -21,10 +20,6 @@ module.exports = {
         port: 3000
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: "./index.html",
-            path: path.join(__dirname, "hosting/dist/")
-        }),
         new CopyWebpackPlugin([{
             from: "assets/*",
             to: "./"
