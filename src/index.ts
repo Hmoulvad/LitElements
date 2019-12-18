@@ -6,17 +6,15 @@ import { global } from "./styles/global.css";
 @customElement('root-el')   
 export class WebApp extends LitElement {
     static get styles() {
-        return global
+        return global;
     }
     render() {
         return html`
-            <div class="">
-                <app-header></app-header>
-                <main>
-                    <p>Nothing to see</p>
-                </main>
-                <app-footer></app-footer>
-            </div>    
+            <app-header></app-header>
+            <main>
+                <p>Nothing to see</p>
+            </main>
+            <app-footer></app-footer>   
         `;
     }
 };

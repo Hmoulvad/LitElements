@@ -1,0 +1,52 @@
+html {
+    --padding: 1.5rem;
+	--padding-large: 2.5rem;
+	--icon-small: 1.1rem;
+
+	--color0: rgb(52, 73, 94);
+	--color1: rgb(192, 57, 43);
+	--color2: rgb(22, 160, 133);
+	--color3: rgb(243, 156, 18);
+	--color4: rgb(41, 128, 185);
+	--color5: rgb(142, 68, 173);
+	--color6: rgb(39, 174, 96);
+	--color7: rgb(230, 114, 47);
+	--color8: #819b2c;
+	--color9: rgb(55, 59, 119);
+	--color10: hotpink;
+
+	--grey1: rgb(127, 140, 141);
+	--grey2: rgb(149, 165, 166);
+	--grey3: rgb(189, 195, 199);
+	--grey4: rgb(236, 240, 241);
+	--grey5: rgb(248, 248, 248);
+
+	--background: var(--grey5);
+
+	--font1: 'Montserrat', sans-serif;
+
+	font-size: 16px;
+	font-family: var(--font1);
+
+	background: var(--background);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 767px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+body {
+	padding: var(--padding);
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	body {
+		padding: 0;
+	}
+}
