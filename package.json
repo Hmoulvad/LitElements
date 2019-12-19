@@ -1,7 +1,7 @@
 {
-  "name": "lit-element-webpack-ts",
+  "name": "projects-with-lit-element",
   "version": "1.0.0",
-  "description": "LitElements testing",
+  "description": "HBM LitElements Site",
   "main": "dist/bundle.js",
   "scripts": {
     "start": "node serve.js",

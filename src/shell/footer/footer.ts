@@ -1,7 +1,7 @@
 import { LitElement, html, customElement } from "lit-element";
 import { global } from "../../styles/global.css";
 
-@customElement("app-footer")
+@customElement("lep-footer")
 class Footer extends LitElement {
 
     static get styles() {
@@ -11,7 +11,6 @@ class Footer extends LitElement {
     render() {
         return html`
             <footer>
-                <p>This is the Footer of the Web Application</p>
             </footer>
         `;
     }

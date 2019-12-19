@@ -26,6 +26,7 @@ class TodoItem extends LitElement {
                 <p class="todo-item__value">${task}</p>
                 <p class="todo-item__value">${author}</p>
                 <p class="todo-item__value">${date}</p>
+                <button>Done</button>
             </div>
         `;
     }
